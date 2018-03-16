@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex Box</title>
+  <style>
+    .box {
+      display: inline-flex;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #ccc;
+    }
+
+    .box1 {
+      flex-direction: row;
+    }
+
+    .box2 {
+      flex-direction: row-reverse;
+    }
+
+    .box3 {
+      flex-direction: column;
+    }
+
+    .box4 {
+      flex-direction: column-reverse;
+    }
+
+    .box4 {
+      flex-direction: column-reverse;
+    }
+
+    .box5 {
+      flex-wrap: nowrap;
+    }
+
+    .box6 {
+      flex-wrap: wrap;
+    }
+
+    .box7 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .box8 {
+      justify-content: flex-start;
+      width: 200px;
+    }
+
+    .box9 {
+      justify-content: flex-end;
+      width: 200px;
+    }
+
+    .box10 {
+      justify-content: center;
+      width: 200px;
+    }
+
+    .box11 {
+      justify-content: space-between;
+      width: 200px;
+    }
+
+    .box12 {
+      justify-content: space-around;
+      width: 200px;
+    }
+
+    .box13 {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .box14 {
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .box15 {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .box16 {
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    .box17 {
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    .box18 {
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    .box19 {
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+
+    .box20 {
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+    .box21 {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    .box22 {
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
+
+    .box23 {
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+
+    .pip {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin: 4px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-direction">
+    <h1>flex-direction</h1>
+    <p><pre>flex-direction: row | row-reverse | column | column-reverse;</pre>  属性决定主轴的方向（即项目的排列方向）</p>
+  
+    <div class="box box1">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+    </div>
+
+    <div class="box box2">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+    </div>
+
+    <div class="box box3">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+    </div>
+
+    <div class="box box4">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+    </div>
+  </div>
+
+  <div class="flex-wrap">
+    <h1>flex-wrap</h1>
+    <p><pre>flex-wrap: nowrap | wrap | wrap-reverse;</pre>  属性定义如果一条轴线排不下，如何换行</p>
+
+    <div class="box box5">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+  
+    <div class="box box6">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+
+    <div class="box box7">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+  </div>
+
+  <div class="flex-flow">
+    <h1>flex-flow</h1>
+    <p><pre>flex-flow: flex-direction || flex-wrap;</pre></p>
+  </div>
+
+  <div class="justify-content">
+    <h1>justify-content</h1>
+    <p>
+      <pre>justify-content: flex-start | flex-end | center | space-between | space-around;</pre>
+      属性定义了项目在主轴上的对齐方式
+    </p>
+    <div class="box box8">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box9">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box10">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box11">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box12">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+  </div>
+
+  <div class="align-items">
+    <h1>align-items</h1>
+    <p>
+      <pre>align-items: flex-start | flex-end | center | baseline | stretch;</pre>
+      属性定义了项目在交叉轴上的对齐方式
+    </p>
+    <div class="box box13">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box14">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box15">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box16">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box17">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+  </div>
+
+  <div class="align-content">
+    <h1>align-content</h1>
+    <p>
+      <pre>align-content: flex-start | flex-end | center | space-between | space-around | stretch;</pre>
+      属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+    </p>
+    <div class="box box18">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box19">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box20">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box21">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box22">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+    <div class="box box23">
+      <span class="pip red"></span>
+      <span class="pip green"></span>
+      <span class="pip blue"></span>
+      <span class="pip orange"></span>
+    </div>
+  </div>
+</body>
+</html>
