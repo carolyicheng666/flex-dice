@@ -3,150 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>flex Box</title>
-  <style>
-    .box {
-      display: inline-flex;
-      width: 100px;
-      height: 100px;
-      border: 1px solid #ccc;
-    }
-
-    .box1 {
-      flex-direction: row;
-    }
-
-    .box2 {
-      flex-direction: row-reverse;
-    }
-
-    .box3 {
-      flex-direction: column;
-    }
-
-    .box4 {
-      flex-direction: column-reverse;
-    }
-
-    .box4 {
-      flex-direction: column-reverse;
-    }
-
-    .box5 {
-      flex-wrap: nowrap;
-    }
-
-    .box6 {
-      flex-wrap: wrap;
-    }
-
-    .box7 {
-      flex-wrap: wrap-reverse;
-    }
-
-    .box8 {
-      justify-content: flex-start;
-      width: 200px;
-    }
-
-    .box9 {
-      justify-content: flex-end;
-      width: 200px;
-    }
-
-    .box10 {
-      justify-content: center;
-      width: 200px;
-    }
-
-    .box11 {
-      justify-content: space-between;
-      width: 200px;
-    }
-
-    .box12 {
-      justify-content: space-around;
-      width: 200px;
-    }
-
-    .box13 {
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    .box14 {
-      flex-wrap: wrap;
-      align-items: flex-end;
-    }
-
-    .box15 {
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .box16 {
-      flex-wrap: wrap;
-      align-items: baseline;
-    }
-
-    .box17 {
-      flex-wrap: wrap;
-      align-items: stretch;
-    }
-
-    .box18 {
-      flex-wrap: wrap;
-      align-content: flex-start;
-    }
-
-    .box19 {
-      flex-wrap: wrap;
-      align-content: flex-end;
-    }
-
-    .box20 {
-      flex-wrap: wrap;
-      align-content: center;
-    }
-
-    .box21 {
-      flex-wrap: wrap;
-      align-content: space-between;
-    }
-
-    .box22 {
-      flex-wrap: wrap;
-      align-content: space-around;
-    }
-
-    .box23 {
-      flex-wrap: wrap;
-      align-content: stretch;
-    }
-
-    .pip {
-      display: block;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      margin: 4px;
-    }
-
-    .red {
-      background-color: red;
-    }
-
-    .green {
-      background-color: green;
-    }
-
-    .blue {
-      background-color: blue;
-    }
-
-    .orange {
-      background-color: orange;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./css/public.css">
+  <link rel="stylesheet" type="text/css" href="./css/flexBox.css">
 </head>
 <body>
   <div class="flex-direction">
@@ -166,15 +24,15 @@
     </div>
 
     <div class="box box3">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
 
     <div class="box box4">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
   </div>
 
@@ -254,34 +112,29 @@
       属性定义了项目在交叉轴上的对齐方式
     </p>
     <div class="box box13">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
     <div class="box box14">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
     <div class="box box15">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
     <div class="box box16">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip2 green"></span>
+      <span class="pip pip3 blue"></span>
     </div>
     <div class="box box17">
       <span class="pip red"></span>
       <span class="pip green"></span>
       <span class="pip blue"></span>
-      <span class="pip orange"></span>
     </div>
   </div>
 
@@ -292,40 +145,52 @@
       属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
     </p>
     <div class="box box18">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 green"></span>
     </div>
     <div class="box box19">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 green"></span>
     </div>
     <div class="box box20">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 green"></span>
     </div>
     <div class="box box21">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 green"></span>
     </div>
     <div class="box box22">
-      <span class="pip red"></span>
-      <span class="pip green"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 green"></span>
     </div>
     <div class="box box23">
       <span class="pip red"></span>
       <span class="pip green"></span>
       <span class="pip blue"></span>
       <span class="pip orange"></span>
+      <span class="pip blue"></span>
+      <span class="pip green"></span>
     </div>
   </div>
 </body>

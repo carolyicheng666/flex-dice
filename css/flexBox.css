@@ -1,0 +1,214 @@
+.box {
+  margin-left: 200px;
+}
+
+[class^="box"]:before {
+  display: block;
+  position: absolute;
+  content: "row:";
+  color: red;
+  font-weight: 700;
+  margin-left: -200px;
+}
+
+.box1 {
+  flex-direction: row;
+}
+
+.box1:before {
+  content: "row:";
+}
+
+.box2 {
+  flex-direction: row-reverse;
+}
+
+.box2:before {
+  content: "row-reverse:";
+}
+
+.box3 {
+  flex-direction: column;
+}
+
+.box3:before {
+  content: "column:";
+}
+
+.box4 {
+  flex-direction: column-reverse;
+}
+
+.box4:before {
+  content: "column-reverse:";
+  margin-top: -80px;
+}
+
+.box5 {
+  flex-wrap: nowrap;
+}
+
+.box5:before {
+  content: "nowrap:";
+}
+
+.box6 {
+  flex-wrap: wrap;
+}
+
+.box6:before {
+  content: "wrap:";
+}
+
+.box7 {
+  flex-wrap: wrap-reverse;
+}
+
+.box7:before {
+  content: "wrap-reverse:";
+  margin-top: -80px;
+}
+
+.box8 {
+  justify-content: flex-start;
+  width: 200px;
+}
+
+.box8:before {
+  content: "flex-start:";
+}
+
+.box9 {
+  justify-content: flex-end;
+  width: 200px;
+}
+
+.box9:before {
+  content: "flex-end:";
+  margin-left: -330px;
+}
+
+.box10 {
+  justify-content: center;
+  width: 200px;
+}
+
+.box10:before {
+  content: "center:";
+  margin-left: -270px;
+}
+
+.box11 {
+  justify-content: space-between;
+  width: 200px;
+}
+
+.box11:before {
+  content: "space-between:";
+}
+
+.box12 {
+  justify-content: space-around;
+  width: 200px;
+}
+
+.box12:before {
+  content: "sapce-around:";
+  margin-left: -245px;
+}
+
+.box13 {
+  align-items: flex-start;
+}
+
+.box13:before {
+  content: "flex-start:";
+}
+
+.box14 {
+  align-items: flex-end;
+}
+
+.box14:before {
+  content: "flex-end:";
+  margin-top: -80px;
+}
+
+.box15 {
+  align-items: center;
+}
+
+.box15:before {
+  content: "center:";
+  margin-top: -40px;
+}
+
+.box16 {
+  align-items: baseline;
+}
+
+.box16:before {
+  content: "baseline:";
+}
+
+.box17 {
+  align-items: stretch;
+}
+
+.box17:before {
+  content: "stretch:";
+}
+
+.box18 {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box18:before {
+  content: "flex-start:";
+}
+
+.box19 {
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.box19:before {
+  content: "flex-end:";
+}
+
+.box20 {
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.box20:before {
+  content: "center:";
+}
+
+.box21 {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.box21:before {
+  content: "space-between:";
+}
+
+.box22 {
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.box22:before {
+  content: "space-around:";
+}
+
+.box23 {
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.box23:before {
+  content: "stretch:";
+}

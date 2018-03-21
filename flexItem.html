@@ -3,38 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>flex Item</title>
-  <style>
-    .box {
-      display: inline-flex;
-      width: 100px;
-      height: 100px;
-      border: 1px solid #ccc;
-    }
-
-    .pip {
-      display: block;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      margin: 4px;
-    }
-
-    .red {
-      background-color: red;
-    }
-
-    .green {
-      background-color: green;
-    }
-
-    .blue {
-      background-color: blue;
-    }
-
-    .orange {
-      background-color: orange;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./css/public.css">
 </head>
 <body>
   <div class="order">
@@ -100,10 +69,10 @@
     <p><pre>align-self: auto | flex-start | flex-end | center | baseline | stretch;</pre>  属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
     
     <div class="box">
-      <span class="pip red"></span>
-      <span class="pip green" style="align-self: flex-end;"></span>
-      <span class="pip blue"></span>
-      <span class="pip orange"></span>
+      <span class="pip pip1 red"></span>
+      <span class="pip pip1 green" style="align-self: flex-end;"></span>
+      <span class="pip pip1 blue"></span>
+      <span class="pip pip1 orange"></span>
     </div>
   </div>
 </body>
